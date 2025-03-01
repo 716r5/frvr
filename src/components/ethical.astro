@@ -1,6 +1,7 @@
---- 
+---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import EthicalFashionScoring from '../components/EthicalFashionScoring.astro';
 import '../styles/global.css';
 ---
 <html lang="en">
@@ -16,12 +17,8 @@ import '../styles/global.css';
       <p class="mb-6">
         Our AI evaluates and rates your clothing items based on brand sustainability, material composition, and ethical production practices.
       </p>
-      <div class="mb-4">
-        <p>Your current item ethical score: <span class="font-bold">85/100</span></p>
-        <div class="w-full bg-gray-700 rounded-full h-4">
-          <div class="bg-blue-500 h-4 rounded-full" style="width: 85%"></div>
-        </div>
-      </div>
+      <!-- Render the component -->
+      <EthicalFashionScoring />
       <p class="mt-4">
         This score is derived from factors such as carbon footprint, material quality, and production ethics.
       </p>

@@ -1,10 +1,11 @@
 ---
 import Header from '../components/Header.astro';
-import Hero from '../components/Hero.astro';
+import Borrow from '../components/Borrow.astro';
+import GetStarted from '../components/GetStarted.astro';
+import FeatureOverview from '../components/FeatureOverview.astro';
 import HowItWorks from '../components/HowItWorks.astro';
 import Accomplishments from '../components/Accomplishments.astro';
 import GiftFeature from '../components/GiftFeature.astro';
-import FeatureOverview from '../components/FeatureOverview.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 ---
@@ -17,14 +18,21 @@ import '../styles/global.css';
   </head>
   <body class="bg-cafeNoir text-white">
     <Header />
-    <Hero />
+    
+    <!-- New Borrow Section -->
+    <Borrow />
+
+    <!-- Get Started Section -->
+    <GetStarted />
+
+    <!-- Our Features Overview -->
+    <FeatureOverview />
+
+    <!-- The Rest of Your Sections -->
     <HowItWorks />
     <Accomplishments />
     <GiftFeature />
     
-    <!-- Feature Overview Section -->
-    <FeatureOverview />
-
     <Footer />
   </body>
 </html>
