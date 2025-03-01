@@ -1,0 +1,147 @@
+---
+const clothes = [
+  {
+    id: 1,
+    image_url: "/images/item1.jpg",
+    title: "Cool Jacket",
+    price: "$50",
+    size: "M",
+    posted_by: "Alice",
+    friend: "Bob"
+  },
+  {
+    id: 2,
+    image_url: "/images/item2.jpg",
+    title: "Stylish Dress",
+    price: "$70",
+    size: "S",
+    posted_by: "Carol",
+    friend: "Dave"
+  },
+  {
+    id: 3,
+    image_url: "/images/item3.jpg",
+    title: "Classic Tee",
+    price: "$30",
+    size: "L",
+    posted_by: "Eve",
+    friend: "Frank"
+  },
+  {
+    id: 4,
+    image_url: "/images/item4.jpg",
+    title: "Trendy Blazer",
+    price: "$90",
+    size: "XL",
+    posted_by: "Grace",
+    friend: "Hank"
+  },
+  {
+    id: 5,
+    image_url: "/images/item5.jpg",
+    title: "Casual Hoodie",
+    price: "$40",
+    size: "M",
+    posted_by: "Ivy",
+    friend: "Jack"
+  },
+  {
+    id: 6,
+    image_url: "/images/item6.jpg",
+    title: "Elegant Scarf",
+    price: "$25",
+    size: "One Size",
+    posted_by: "Kate",
+    friend: "Leo"
+  },
+  {
+    id: 7,
+    image_url: "/images/item7.jpg",
+    title: "Leather Boots",
+    price: "$120",
+    size: "8",
+    posted_by: "Mia",
+    friend: "Nick"
+  },
+  {
+    id: 8,
+    image_url: "/images/item8.jpg",
+    title: "Vintage Hat",
+    price: "$35",
+    size: "Adjustable",
+    posted_by: "Olivia",
+    friend: "Paul"
+  },
+  {
+    id: 9,
+    image_url: "/images/item9.jpg",
+    title: "Sporty Sneakers",
+    price: "$60",
+    size: "10",
+    posted_by: "Quinn",
+    friend: "Ray"
+  },
+  {
+    id: 10,
+    image_url: "/images/item10.jpg",
+    title: "Chic Skirt",
+    price: "$45",
+    size: "S",
+    posted_by: "Sara",
+    friend: "Tom"
+  },
+  {
+    id: 11,
+    image_url: "/images/item11.jpg",
+    title: "Modern Coat",
+    price: "$110",
+    size: "L",
+    posted_by: "Uma",
+    friend: "Vic"
+  },
+  {
+    id: 12,
+    image_url: "/images/item12.jpg",
+    title: "Designer Bag",
+    price: "$200",
+    size: "N/A",
+    posted_by: "Wendy",
+    friend: "Xander"
+  }
+];
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends' Closets</title>
+    <link rel="stylesheet" href="/src/styles/global.css" />
+  </head>
+  <body class="bg-orangeWheel text-icterine">
+    <div class="max-w-6xl mx-auto p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {clothes.map((cloth) => (
+        <div key={cloth.id} class="bg-icterine text-black p-6 rounded-lg shadow-lg relative">
+          {/* Image Container */}
+          <div class="relative">
+            <img src={cloth.image_url} alt={cloth.title} class="w-full h-auto rounded-t-lg" />
+            <button class="absolute bottom-2 right-2 bg-orangeWheel text-icterine p-2 rounded-full text-sm">
+              ❤️
+            </button>
+          </div>
+          {/* Details */}
+          <div class="mt-4">
+            <h2 class="text-xl font-bold">{cloth.title}</h2>
+            <div class="flex justify-between items-center mt-2">
+              <span class="font-semibold">{cloth.price}</span>
+              <span class="font-semibold">{cloth.size}</span>
+            </div>
+            <div class="mt-2 flex justify-between text-sm">
+              <span>Posted by: {cloth.posted_by}</span>
+              <span>Friend: {cloth.friend}</span>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </body>
+</html>

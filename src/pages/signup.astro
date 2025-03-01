@@ -1,0 +1,65 @@
+---
+import { useState } from 'react';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+    <section class="flex flex-col items-center justify-center text-center py-20 px-6 bg-black">
+        <h1 class="text-5xl font-bold text-icterine">Borrow. Wear. Return.</h1>
+        <p class="text-lg text-icterine mt-4">
+            Your dream outfit is already in your friend’s closet. Find it, request it, and borrow with ease.
+        </p>
+        <div class="mt-6">
+            <button id="get-started-btn" class="bg-icterine text-black px-6 py-3 rounded-lg font-semibold mr-4">
+                Get Started
+            </button>
+            <button id="explore-closets-btn" class="bg-icterine text-black px-6 py-3 rounded-lg font-semibold">
+                Explore Closets
+            </button>
+        </div>
+        <div class="mt-6">
+            <input type="text" id="username" placeholder="Username" class="px-4 py-2 rounded-lg mr-2">
+            <input type="password" id="password" placeholder="Password" class="px-4 py-2 rounded-lg mr-2">
+            <button id="login-btn" class="bg-icterine text-black px-6 py-3 rounded-lg font-semibold">
+                Log In
+            </button>
+        </div>
+    </section>
+
+    <script>
+        const getStartedBtn = document.getElementById('get-started-btn');
+        if (getStartedBtn) {
+            getStartedBtn.addEventListener('click', () => {
+                window.location.href = '/signup'; // Redirect to the signup.astro page
+            });
+        }
+
+        const exploreClosetsBtn = document.getElementById('explore-closets-btn');
+        if (exploreClosetsBtn) {
+            exploreClosetsBtn.addEventListener('click', () => {
+                window.location.href = '/thecloset'; // Redirect to the thecloset.astro page
+            });
+        }
+
+        const loginBtn = document.getElementById('login-btn');
+        if (loginBtn) {
+            loginBtn.addEventListener('click', () => {
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+                if (username && password) {
+                    // Perform login logic here
+                    window.location.href = '/thecloset'; // Redirect to the closet.astro page after logging in
+                } else {
+                    alert('Please enter both username and password.');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

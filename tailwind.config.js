@@ -6,11 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        icterine: "#f7f052",
-        orangeWheel: "#f28123",
-        syracuseRedOrange: "#d34e24",
-        cafeNoir: "#563f1b",
-        myrtleGreen: "#38726c",
+        icterine: "#F5F5DC",
+        orangeWheel: "#000000",
+        syracuseRedOrange: "#FFDEAD",
+        cafeNoir: "#8B4513",
+        myrtleGreen: "#D2691E",
       },
     },
   },
