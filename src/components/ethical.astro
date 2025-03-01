@@ -1,0 +1,33 @@
+--- 
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethical Fashion Scoring</title>
+  </head>
+  <body class="bg-cafeNoir text-white">
+    <Header />
+    <main class="p-8">
+      <h1 class="text-3xl font-bold mb-4">Ethical Fashion Scoring</h1>
+      <p class="mb-6">
+        Our AI automatically evaluates and rates uploaded clothing items based on brand sustainability, material composition, and production methods, helping you make more informed borrowing choices.
+      </p>
+      <div class="mb-4">
+        <p>Your current item ethical score: <span class="font-bold">85/100</span></p>
+        <div class="w-full bg-gray-700 rounded-full h-4">
+          <div class="bg-blue-500 h-4 rounded-full" style="width: 85%"></div>
+        </div>
+      </div>
+      <p class="mt-4">
+        This score takes into account carbon footprint, material quality, and ethical production practices.
+      </p>
+      <a href="/" class="mt-6 inline-block text-syracuseRedOrange hover:underline">← Back to Home</a>
+    </main>
+    <Footer />
+  </body>
+</html>

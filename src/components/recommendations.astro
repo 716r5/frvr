@@ -1,0 +1,36 @@
+--- 
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Style Recommendation Engine</title>
+  </head>
+  <body class="bg-cafeNoir text-white">
+    <Header />
+    <main class="p-8">
+      <h1 class="text-3xl font-bold mb-4">Smart Style Recommendation Engine</h1>
+      <p class="mb-6">
+        Using advanced machine learning, Frvr analyzes your borrowing patterns, event types, and seasonal trends to suggest ideal items from friends' collections that match your personal style preferences.
+      </p>
+      <div class="mb-4">
+        <p class="font-bold">Today's Recommendation:</p>
+        <p class="mt-2">Pair your classic denim jacket with a vibrant scarf for a fresh twist at your next outdoor event.</p>
+      </div>
+      <div class="mb-4">
+        <p class="font-bold">Analysis Insights:</p>
+        <ul class="list-disc ml-6">
+          <li>Borrowing Pattern: Casual Fridays trending.</li>
+          <li>Upcoming Event: Outdoor summer party.</li>
+          <li>Seasonal Trend: Light layers and breathable fabrics.</li>
+        </ul>
+      </div>
+      <a href="/" class="mt-6 inline-block text-syracuseRedOrange hover:underline">← Back to Home</a>
+    </main>
+    <Footer />
+  </body>
+</html>

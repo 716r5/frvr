@@ -1,13 +1,35 @@
-<div class="p-6 bg-gray-800 rounded-md my-8 mx-4">
-  <h2 class="text-2xl font-bold mb-4">Personalized Wardrobe Gap Analysis</h2>
-  <p class="mb-2 text-lg">
-    Analysis indicates you might benefit from adding a versatile jacket to your collection.
-  </p>
-  <p class="text-sm">
-    This addition could enhance your outfit combinations and further promote sustainable fashion choices.
-  </p>
-  <!-- Fixed progress bar indicating gap level -->
-  <div class="w-full bg-gray-700 rounded-full h-4 mt-4">
-    <div class="bg-purple-500 h-4 rounded-full" style="width: 50%"></div>
-  </div>
-</div>
+--- 
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personalized Wardrobe Gap Analysis</title>
+  </head>
+  <body class="bg-cafeNoir text-white">
+    <Header />
+    <main class="p-8">
+      <h1 class="text-3xl font-bold mb-4">Personalized Wardrobe Gap Analysis</h1>
+      <p class="mb-6">
+        Frvr analyzes your friends’ borrowing habits to identify which items are most frequently requested and missing in your collective closet.
+      </p>
+      <div class="mb-4">
+        <p class="font-bold">Gap Insight:</p>
+        <p class="mt-2">Our analysis shows that a versatile jacket is the most requested item among your network.</p>
+      </div>
+      <div class="mb-4">
+        <p class="font-bold">Analysis Details:</p>
+        <ul class="list-disc ml-6">
+          <li>Category Frequency: Jackets are missing from 60% of profiles.</li>
+          <li>Value Proposition: Adding a versatile jacket could boost your network's overall style score by 10%.</li>
+        </ul>
+      </div>
+      <a href="/" class="mt-6 inline-block text-syracuseRedOrange hover:underline">← Back to Home</a>
+    </main>
+    <Footer />
+  </body>
+</html>
