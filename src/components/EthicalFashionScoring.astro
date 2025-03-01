@@ -1,0 +1,15 @@
+---
+const ethicalScore = 85;
+---
+
+<div class="p-6 bg-gray-800 rounded-md my-8 mx-4">
+  <h2 class="text-2xl font-bold mb-4">Ethical Fashion Scoring</h2>
+  <p class="mb-2 text-lg">
+    Your current wardrobe's ethical score is: <span class="font-bold">{ethicalScore}</span>/100
+  </p>
+  <p class="text-sm mb-4">Based on sustainability metrics and lifestyle impact data.</p>
+  <!-- Hardcoded progress bar representing the ethical score -->
+  <div class="w-full bg-gray-700 rounded-full h-4">
+    <div class="bg-blue-500 h-4 rounded-full" style="width: {ethicalScore}%"></div>
+  </div>
+</div>

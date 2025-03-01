@@ -1,0 +1,38 @@
+---
+const messages = [
+  "Great job saving the planet!",
+  "Your sustainable efforts are inspiring!",
+  "Keep up the eco-friendly work!",
+  "Awesome! You made a positive impact today!",
+  "Fantastic! Your choices are green!",
+  "Bravo! You are a sustainability champion!",
+  "Well done! Every step counts!",
+  "Superb! Your actions are eco-friendly!",
+  "Impressive! The Earth thanks you!",
+  "Excellent work! Aim even higher!"
+];
+const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+---
+
+<div class="p-6 bg-gray-800 rounded-md my-8 mx-4">
+  <h2 class="text-2xl font-bold mb-4">Analytics</h2>
+  <div class="mb-6">
+    <p class="text-lg">You saved <span class="font-bold">5kg of CO<sub>2</sub></span> today!</p>
+    <p class="mt-1 text-md">{randomMessage}</p>
+  </div>
+  <!-- Fixed Sustainability Metrics Progress Bar -->
+  <div class="mb-6">
+    <p class="mb-1">Sustainability Metrics</p>
+    <div class="w-full bg-gray-700 rounded-full h-4">
+      <div class="bg-green-500 h-4 rounded-full" style="width: 70%"></div>
+    </div>
+  </div>
+  <!-- Simulated Gemini API Image Upload -->
+  <div>
+    <p class="mb-2">Upload an image for AI analysis:</p>
+    <input type="file" accept="image/*" class="p-2 bg-gray-600 rounded" />
+    <button class="mt-3 px-4 py-2 bg-green-600 rounded hover:bg-green-700 transition-colors">
+      Analyze
+    </button>
+  </div>
+</div>
